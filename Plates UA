@@ -144,6 +144,7 @@ plates_list = ['HH9901CC', 'CA9150WC', 'BH7144WB', 'AI7665KU', 'AI8045DS', 'HH12
 #print("Plates List : ", plates_list)
 
 plate_number = input("Type the Plate Number: \n")
+plate_number = plate_number.upper() if len(plate_number) else plate_number.islower()
 
 #Определяем число уникальных номеров
 new_list = []
